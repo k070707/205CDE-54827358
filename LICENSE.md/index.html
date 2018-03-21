@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>KOKAYA online shop</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0);
+    color: #f1f1f1;
+    width: 100%;
+	height: 450px;
+    text-align: center;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;}
+	
+.button1 {
+    background-color:black;
+    color:white;
+    border: 2px solid white;
+}
+
+.button {
+    background-color:black;
+    border: 2px solid white;
+    color:white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+	border-radius: 12px;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted id="myVideo">
+  <source src="paint.mp4" type="video/mp4">
+</video>
+
+
+<div class="content">
+  <h1 style="font-size:3em">KOKAYA</h1>
+  <hr align="center" width="40%" style="border:none;border-top:3px solid #336699"; />
+  <p style=" color:gray">A shop of selling fabrics since 2018</p>
+  <a href="http://localhost/205project/login.html"><input type="button" value="Login" class="button button1"></input></a>
+  <a href="http://localhost/205project/register.html"><input type="button" value="Sign In" class="button button1"></input></a>
+</div>
+
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("login");
+var btn = document.getElementById("signin");
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<title>KOKAYA online shop</title>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='bootstrap\bootstrap.css'>
+<link rel='stylesheet' href='bootstrap\bootstrap.min.css'>
+</head>
+
+
+<style>
+body{
+    background-color: black;
+}
+
+.button1 {
+    background-color:black;
+    color:white;
+    border: 2px solid white;
+}
+
+.button2 {
+    background-color:white;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+	border-radius: 12px;
+}
+
+.button {
+    background-color:black;
+    border: 2px solid white;
+    color:white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+	border-radius: 12px;
+}
+
+.text_color {
+    color:#F8F8FF;
+	text-align:center;
+	font-face:fantasy;
+}
+</style>
+
+
+<body>
+
+<!--Navigation Bar-->
+<ul class="nav nav-pills" style="background-color:rgba(255,255,255,0.3)">
+  <li class="nav-item">
+  <a class="nav-link" href="#">ROKAYA</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link active" style="background-color:#FF9933" href="#">Product</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/accountpage.html">My Account</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/contactpage.html">Contact us</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/purchasing.php">Purchasing car</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/logout.php">logout</a>
+  </li>
+</ul> 
+<hr>
+
+<!--easy to know your location and back to last page-->
+<ol class="breadcrumb">
+    <li>Your location:&nbsp;&nbsp;<a></a></li>
+    <li><a href="D:\205\205project\productpage.html">Product</a></li>
+    <li class="active">&nbsp;\&nbsp;Silk</li>
+</ol>
+<hr>
+
+<!--the row about kind of product-->
+<div class="row">
+    <div class="col-lg-2">
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost/205project/productpage.html"><input type="button" value="Cotton" class="button button1"></input></a><br/><br/>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost/205project/product_polyester.html"><input type="button" value="Polyester" class="button button1"></input></a><br/><br/>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://localhost/205project/product_viscose.html"><input type="button" value="Viscose" class="button button1"></input></a><br/><br/>
+	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><input type="button" value="Silk" class="button2"></input></a><br/><br/>
+    </div>
+	
+
+<!--product display area-->
+<div class="container">
+
+ <div class="row"> <!--type of product-->
+ <div class="col-md-12">
+ <h1 class="text_color">Silk</h1>
+ <hr>
+ </div>
+ </div>
+
+ <div class="row"> <!--first row of displaying--> 
+ <div class="col-md-6">
+	<div class="media">
+     <a class="media-left" href="#">
+        <img src="image\silk1.jpg" width="200" height="180" alt="silk"><!--product picture-->
+		<br>
+		<br>
+     </a>
+	 <div class="media-body"><!--content-->
+	    <h4 class="media-heading text_color"><a>White Silk</a></h4>
+		 <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Product No:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">10005</p></div>
+		 </div>		
+         <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Color:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">white</p></div>
+		 </div>			 
+         <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Price:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">$85/m</p></div>
+		 </div>	
+		<br>
+		<a href="http://localhost/205project/10005.php"><input type="button" value="Order Now!" class="button button1"></input></a>
+		<br>
+     </div>
+   </div>
+</div>
+
+ <div class="col-md-6">
+ 	<div class="media">
+     <a class="media-left" href="#">
+        <img src="image\silk2.jpg" width="200" height="180" alt="silk"><!--product picture-->
+		<br>
+		<br>
+     </a>
+	 <div class="media-body"><!--content-->
+		<h4 class="media-heading text_color"><a>Green Silk</a></h4>
+		 <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Product No:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">10006</p></div>
+		 </div>		
+         <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Color:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">green</p></div>
+		 </div>			 
+         <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Price:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">$80/m</p></div>
+		 </div>	
+		<br>
+		<a href="http://localhost/205project/10006.php"><input type="button" value="Order Now!" class="button button1"></input></a>
+	 </div>
+   </div>
+</div>
+</div>
+
+<hr>
+<hr>
+		
+ <div class="row"><!--Second row of displaying--> 
+     <div class="col-md-6">
+	    <div class="media">
+          <a class="media-left" href="#">
+             <img src="image\silk3.jpg" width="200" height="180" alt="silk"><!--product picture-->
+		<br>
+		<br>
+          </a>
+	 <div class="media-body"><!--content-->
+		<h4 class="media-heading text_color"><a>Gold Silk</a></h4>
+		   <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Product No:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">10007</p></div>
+		   </div>		
+           <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Color:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">Gold</p></div>
+		    </div>			 
+           <div class="row">
+              <div class="col-md-6">
+		           <p class="text_color">Price:</p></div>
+			  <div class="col-md-6">
+			       <p class="text_color">$100/m</p></div>
+		    </div>	
+		<br>
+		<a href="http://localhost/205project/10007.php"><input type="button" value="Order Now!" class="button button1"></input></a>
+     </div>
+   </div>
+</div>
+
+<div class="col-md-6"></div>
+<!--non product-->
+</div>
+
+</div>
+</body>
+
+
+</html>

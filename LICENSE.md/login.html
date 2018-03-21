@@ -1,0 +1,78 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KOKAYA online shop</title> 
+<style type="text/css"> 
+
+body{
+    background-color: black;
+	width:100%;
+}
+
+div{
+    color:#FFFFFF;
+	text-align: center;
+	font-size:300%;
+}
+
+table {
+    margin:auto;
+    background-color: HSL(207,14%,35%);
+	border-collapse: collapse;
+}
+
+
+
+th, td {
+    border: 3px solid HSL(207,14%,20%);
+	border-collapse: collapse;
+    padding: 10px;
+	color:#FFFFFF;
+	text-align: right;
+}
+
+
+
+
+</style> 
+
+</head> 
+<body> 
+  
+  <form action="http://localhost/205project/login.php" method="post" name="form_login"
+    onsubmit="return check()"> 
+	<br><br><div>KORAYA Login</div><br>
+	<table>
+    <tr><td><span>Login ID</span></td><td><input type="text" name="username" id="username"></td></tr>
+    <tr><td><span>Password:</span></td><td><input type="text" name="password" id="password"></td></tr>
+    <tr><td colspan="2"><input type="submit" value="submit"></td></tr>
+    </table>
+  </form> 
+
+  
+  <script type="text/javascript"> 
+    function check() { 
+      var name=document.getElementById("username").value;  
+      var password=document.getElementById("password").value; 
+      var assertpassword=document.getElementById("assertpassword").value;
+      var regex=/^[/s]+$/; 
+        
+      if(regex.test(username)||name.length==0){ 
+        alert("Login ID is wrong"); 
+        return false; 
+      }  	  
+      if(regex.test(password)||password.length==0){ 
+        alert("Password is wrong"); 
+        return false;     
+      }  
+    } 
+	
+
+ 
+ </script> 
+ 
+ 
+ 
+</body> 
+</html> 

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>KOKAYA online shop</title>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='bootstrap\bootstrap.css'>
+<link rel='stylesheet' href='bootstrap\bootstrap.min.css'>
+</head>
+
+
+<style>
+body{
+    background-color: black;
+}
+
+.button1 {
+    background-color:black;
+    color:white;
+    border: 2px solid white;
+}
+
+.button {
+    background-color:black;
+    border: 2px solid white;
+    color:white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+	border-radius: 12px;
+}
+</style>
+
+
+<body>
+<script>
+
+</script>
+<!--Navigation Bar-->
+<ul class="nav nav-pills" style="background-color:rgba(255,255,255,0.2)">
+  <li class="nav-item">
+  <a class="nav-link" href="#">ROKAYA</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/productpage.html">Product</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link active" style="background-color:#FF9933" href="#">My Account</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/contactpage.html">Contact us</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/purchasing.php">Purchasing car</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="http://localhost/205project/logout.php">logout</a>
+  </li>
+</ul> 
+<hr>
+
+<ol class="breadcrumb">
+    <li>Your location:&nbsp;&nbsp;<a></a></li>
+    <li class="active">My Information</li>
+</ol>
+<hr>
+
+
+
+<div class="row">
+    <div class="col-lg-2">
+	   <a href="#"><input type="button" value="My Information" class="button button1"></input></a><br/><br/>
+    </div>
+	
+
+
+<div class="container">
+<br>
+<div class="row">
+<div class="col-lg-8"></div>
+<div class="col-lg-4"><h2 style="color:white">Update</h2></div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-lg-4">
+<h3 style="color:white">Login ID&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+</div>
+
+<div class="col-lg-4" style="color:white">
+<script type="text/javascript" src="http://localhost/205project/getloginid.php"></script>
+<script type="text/javascript" >
+    document.write(jstext);
+</script>
+
+</div>
+
+<div class="col-lg-4">
+</div>
+</div>
+
+
+
+
+<div class="row">
+<div class="col-lg-4">
+<h3 style="color:white">Name&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+</div>
+
+<div class="col-lg-4" style="color:white">
+<script type="text/javascript" src="http://localhost/205project/getname.php"></script>
+<script type="text/javascript" >
+    document.write(jstext);
+</script>
+
+</div>
+
+<div class="col-lg-4">
+<form action=" http://localhost/205project/updatename.php" method="post" name="form_update" onsubmit=""> 
+ <input type="text" name="name" id="name">
+ <input type="submit" value="submit">
+</form>
+</div>
+</div>
+
+<div class="row"> <!--second line-->
+<div class="col-lg-4">
+<h3 style="color:white">Phone number&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+</div>
+
+
+<div class="col-lg-4" style="color:white">
+<script type="text/javascript" src="http://localhost/205project/getphoneno.php"></script>
+<script type="text/javascript" >
+    document.write(jstext);
+</script>
+</div>
+
+<div class="col-lg-4">
+ <form action=" http://localhost/205project/updatephone.php" method="post" name="form_update" onsubmit=""> 
+ <input type="int" name="phone" id="phone">
+ <input type="submit" value="submit">
+</div>
+</div>
+
+<div class="row"> <!--3 line-->
+<div class="col-lg-4">
+<h3 style="color:white">Address&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+</div>
+
+
+<div class="col-lg-4" style="color:white">
+<script type="text/javascript" src="http://localhost/205project/getaddress.php"></script>
+<script type="text/javascript" >
+    document.write(jstext);
+</script>
+</div>
+
+<div class="col-lg-4">
+ <form action=" http://localhost/205project/updateaddress.php" method="post" name="form_update" onsubmit=""> 
+ <input type="text" name="address" id="address">
+ <input type="submit" value="submit">
+</form>
+</div>
+</div>
+
+
+</div>
+    </div>
+</div>
+   
+<p>hi</p>
+</body>
+
+
+</html>

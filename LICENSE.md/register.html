@@ -1,0 +1,86 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KOKAYA online shop</title> 
+<style type="text/css"> 
+
+body{
+    background-color: black;
+	width:100%;
+}
+
+div{
+    color:#FFFFFF;
+	text-align: center;
+	font-size:300%;
+}
+
+table {
+    margin:auto;
+    background-color: HSL(207,14%,35%);
+	border-collapse: collapse;
+}
+
+
+
+th, td {
+    border: 3px solid HSL(207,14%,20%);
+	border-collapse: collapse;
+    padding: 10px;
+	color:#FFFFFF;
+	text-align: right;
+}
+
+
+
+
+</style> 
+
+</head> 
+<body> 
+  
+  <form action="http://localhost/205project/register.php" method="post" name="form_register"
+    onsubmit="return check()"> 
+	<br><br><div>KORAYA Register</div><br>
+	<table>
+    <tr><td><span>HKID:</span></td><td><input type="text" name="hkid" id="hkid"></td></tr>
+    <tr><td><span>Password:</span></td><td><input type="text" name="password" id="password"></td></tr>
+    <tr><td><span>Assert password:</span></td><td><input type="text" name="assertpassword" id="assertpassword"></td></tr>
+	<tr><td><span>Name:</span></td><td><input type="text" name="name" id="name"></td></tr>
+	<tr><td><span>Phone No:</span></td><td><input type="text" name="phone" id="phone"></td></tr>
+	<tr><td><span>Address:</span></td><td><input type="text" name="address" id="address"></td></tr>
+    <tr><td colspan="2"><input type="submit" value="submit"></td></tr>
+    </table>
+  </form> 
+
+  
+  <script type="text/javascript"> 
+    function check() { 
+      var name=document.getElementById("hkid").value;  
+      var password=document.getElementById("password").value; 
+      var assertpassword=document.getElementById("assertpassword").value;
+      var regex=/^[/s]+$/; 
+        
+      if(regex.test(hkid)||name.length==0){ 
+        alert("Enter the wrong name!"); 
+        return false; 
+      }  	  
+      if(regex.test(password)||password.length==0){ 
+        alert("Password not correct!"); 
+        return false;     
+      } 
+      if(password!=assertpassword){ 
+        alert("Password not correct!"); 
+        return false; 
+      } 
+    } 
+	
+
+ 
+ </script> 
+ 
+ 
+ 
+</body> 
+</html> 

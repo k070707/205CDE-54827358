@@ -1,3 +1,4 @@
+from flask import Flask
 <!DOCTYPE html>
 <html>
 <title>KOKAYA online shop</title>
@@ -90,16 +91,12 @@ body{
 				     <div class="col-lg-12 ">
 			        <h2 style="color:white">Tsim Sha Tsui East shop&nbsp;&nbsp;(no.001)</h2>
 					 <div class="row">
-					    <div class="col-lg-4 ">
-				            <p style="color:white">Address:</p></div>
-					    <div class="col-lg-8 ">
-					        <p style="color:white">UG243, Energy Plaza Shopping Arcade, 99 Mody Rd, Tsim Sha Tsui East</p></div>
-					 </div>
-					 	<div class="row">
-					    <div class="col-lg-4 ">
-				            <p style="color:white">Telephone:</p></div>
-					    <div class="col-lg-8 ">
-					        <p style="color:white">(852)2876 0000</p></div>
+							app = Flask(_name_)
+                              @app.route("/")
+                                 def display():
+	                                return 'Open Hour: 08:00-22:30, Mon-Sun Our location: TaiWai, Hong Kong  Tel.:00000000 Email: PinionCinema@mail.com  Price: $50 each (children ticket fee same as adults)'
+</p></div>
+
 					 </div>
 					 
 					 <div class="row">
